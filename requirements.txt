@@ -1,0 +1,9 @@
+numpy
+torch
+torchvision
+craft_text_detector
+cv2
+scikit-image
+Pillow
+segmentation_models_pytorch
+scipy
