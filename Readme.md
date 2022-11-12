@@ -21,3 +21,5 @@
 ```Little-BigMan/bubble_segmentation``` for bubble segmentation
 
 ```dmMaze/BallonsTranslator``` & ```saic-mdal/lama``` for lama inpainting
+
+```maxhalford : Comic book panel segmentation``` for panel detection
