@@ -1,6 +1,7 @@
 <h1 align="center">Toon2Data</h1>
 
 `Toon2Data is a program that extracts panels in manwha/Webtoon with text and bubble inpainting.`
+
 ![Explanation](https://i.imgur.com/NPJu7rt.png)
 
 ## 📋 Installation
