@@ -18,7 +18,7 @@ class Detector:
     def __init__(self, cuda : bool):
         self.cuda = cuda
         self.device = "cuda" if cuda else "cpu"
-        self.pattern_path ='./pattern.png'
+        self.pattern_path ='./models/pattern.png'
         self.transform = transforms.Compose([
             transforms.Resize((224, 224)),
             transforms.ToTensor(),
