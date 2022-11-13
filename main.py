@@ -26,7 +26,6 @@ for c, img_path in enumerate(allImages, start=1):
     text_mask = imageDetector.detectText(image)
     image = imageInpainter._inpaint(image, text_mask)
 
-
     for panelId, imgCord in enumerate(imageDetector.detectPanels(image)):
         newPil = image[imgCord[0]:imgCord[0]+(imgCord[2]-imgCord[0]), imgCord[1]:imgCord[1]+(imgCord[3] - imgCord[1])]
         height, width, channels = newPil.shape
@@ -35,5 +34,5 @@ for c, img_path in enumerate(allImages, start=1):
         if np.sum(newMask) != 0: # is mask filled with black?
             new_mask = cv2.dilate(newMask, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15,15))) # enlarge the mask because the bubbles are not very well detected
             newPil = imageInpainter._inpaint(newPil, new_mask)
-        cv2.imwrite(f"result/{c}-{panelId}.jpg", newPil)
+        cv2.imwrite(f"results/{c}-{panelId}.jpg", newPil)
 

@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 import torch
 from typing import Dict, List
-from .models.lama import load_lama_mpe, resize_keepasp, LamaFourier
+from models.lama import load_lama_mpe, resize_keepasp, LamaFourier
 
 LAMA_MPE: LamaFourier = None
 
